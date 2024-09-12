@@ -15,16 +15,22 @@ public class ClothingItem {
     private String imageUrl;
     private int price;
     private String category;
+    private String title;       // Added
+    private String heading;     // Added
+    private String modalBody;   // Added
 
     // Constructors
     public ClothingItem() {}
 
-    public ClothingItem(String name, String description, String imageUrl, int price, String category) {
+    public ClothingItem(String name, String description, String imageUrl, int price, String category, String title, String heading, String modalBody) {
         this.name = name;
         this.description = description;
         this.imageUrl = imageUrl;
         this.price = price;
         this.category = category;
+        this.title = title;        // Initialize
+        this.heading = heading;    // Initialize
+        this.modalBody = modalBody; // Initialize
     }
 
     // Getters and Setters
@@ -74,5 +80,29 @@ public class ClothingItem {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getHeading() {
+        return heading;
+    }
+
+    public void setHeading(String heading) {
+        this.heading = heading;
+    }
+
+    public String getModalBody() {
+        return modalBody;
+    }
+
+    public void setModalBody(String modalBody) {
+        this.modalBody = modalBody;
     }
 }
